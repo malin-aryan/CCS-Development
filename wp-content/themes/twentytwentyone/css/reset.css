@@ -1,0 +1,283 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+   
+    font-family: 'Conv_DMSans-Regular';
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+    
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+    content: none;      
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul{ margin:0px; padding: 0px;}
+
+@font-face {
+	font-family: 'Conv_NUNITOSANS-REGULAR';
+	src: url('../fonts/NUNITOSANS-REGULAR.eot');
+    src: local('☺'), url('../fonts/NUNITOSANS-REGULAR.woff') format('woff'), 
+    url('../fonts/NUNITOSANS-REGULAR.ttf') format('truetype'), 
+    url('../fonts/NUNITOSANS-REGULAR.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_NUNITOSANS-SEMIBOLD';
+	src: url('../fonts/NUNITOSANS-SEMIBOLD.eot');
+    src: local('☺'), url('../fonts/NUNITOSANS-SEMIBOLD.woff') format('woff'), 
+    url('../fonts/NUNITOSANS-SEMIBOLD.ttf') format('truetype'), 
+    url('../fonts/NUNITOSANS-SEMIBOLD.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_DMSans-Regular';
+	src: url('../fonts/DMSans-Regular.eot');
+	src: local('☺'), url('../fonts/DMSans-Regular.woff') format('woff'), 
+    url('../fonts/DMSans-Regular.ttf') format('truetype'), 
+    url('../fonts/DMSans-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_DMSans-Bold';
+	src: url('../fonts/DMSans-Bold.eot');
+	src: local('☺'), url('../fonts/DMSans-Bold.woff') format('woff'), 
+    url('../fonts/DMSans-Bold.ttf') format('truetype'), 
+    url('../fonts/DMSans-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Oswald-Regular';
+	src: url('../fonts/Oswald-Regular.eot');
+	src: local('☺'), url('../fonts/Oswald-Regular.woff') format('woff'),
+     url('../fonts/Oswald-Regular.ttf') format('truetype'), 
+     url('../fonts/Oswald-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+a{ text-decoration: none;}
+
+.custom-container {
+    width:100%;
+    max-width:1400px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.custom-container:before{
+    display: table;
+    content: " ";
+}
+
+.custom-container:before, .custom-container2:before  {
+    display: table;
+    content: " ";
+}
+.custom-container:after, .custom-container2:after {
+    clear: both;
+}
+
+.block{ display: block;}
+.flex{display: -webkit-box;	display: -moz-box;	display: -webkit-flex;	display: -ms-flexbox; }
+
+.full    { width: 100%;}
+.bgr-b   { background: #000000;}
+.bgr-bl  { background: #008692;}    
+.bgr-bd  { background: #032632;}
+.bgr-y   { background: #ffe500;}
+.bgr-g   { background: #fafafa;}
+.bgr-b   { background: #09c8f1;}
+
+
+.color-b  { color:#000000;}
+.color-w  { color:#ffffff;}
+.color-bl { color:#008692;}
+.color-y  { color:#ffe500;}
+
+/* text common css start */
+.t-upper{ text-transform: uppercase;}
+.t-center { text-align: center;}
+.x12 { font-size: 12px; line-height: 16px;}
+.x14 { font-size: 14px; line-height: 20px;}
+.x16 { font-size: 16px; line-height: 24px;}
+.x18 { font-size: 18px; line-height: 26px;}
+.x20 { font-size: 20px; line-height: 28px;}
+.x22 { font-size: 22px; line-height: 28px;}
+.x24 { font-size: 24px; line-height: 30px;}
+.x26 { font-size: 26px; line-height: 32px;}
+.x30 { font-size: 30px; line-height: 34px;}
+.x32 { font-size: 32px; line-height: 36px;}
+.x36 { font-size: 36px; line-height: 40px;}
+.x40 { font-size: 40px; line-height: 44px;}
+.x42 { font-size: 42px; line-height: 46px;}
+.x46 { font-size: 46px; line-height: 50px;}
+.x50 { font-size: 50px; line-height: 56px;}
+.x52 { font-size: 52px; line-height: 58px;}
+.x56 { font-size: 56px; line-height: 60px;}
+.x60 { font-size: 60px; line-height: 68px;}
+
+
+/* margin common css */
+.mtop_10 { margin-top:10px;}
+.mtop_15 { margin-top:15px;}
+.mtop_20 { margin-top:20px;}
+.mtop_30 { margin-top:30px;}
+
+.mbot_10 { margin-bottom:10px;}
+.mbot_15 { margin-bottom:15px;}
+.mbot_20 { margin-bottom:20px;}
+.mbot_25 { margin-bottom:25px;}
+.mbot_30 { margin-bottom:30px;}
+.mbot_35 { margin-bottom:35px;}
+.mbot_40 { margin-bottom:40px;}
+.mbot_45 { margin-bottom:45px;}
+.mbot_50 { margin-bottom:50px;}
+
+.mrgt_10 { margin-right:10px;}
+.mrgt_15 { margin-right:15px;}
+.mrgt_20 { margin-right:20px;}
+.mrgt_30 { margin-right:30px;}
+
+.mlft_10 { margin-left:10px;}
+.mlft_15 { margin-left:15px;}
+.mlft_20 { margin-left:20px;}
+.mlft_30 { margin-left:30px;}
+
+
+/* padding common css */
+.pad_10 { padding:10px;}
+.pad_15 { padding:15px;}
+.pad_20 { padding:20px;}
+.pad_25 { padding:25px;}
+.pad_30 { padding:30px;}
+
+.pad10_0 { padding: 10px 0px;}
+.pad15_0 { padding: 15px 0px;}
+.pad20_0 { padding: 20px 0px;}
+.pad30_0 { padding: 30px 0px;}
+.pad40_0 { padding: 40px 0px;}
+.pad75_0 { padding: 75px 0px;}
+
+.ptop_10 { padding-top:10px;}
+.ptop_15 { padding-top:15px;}
+.ptop_20 { padding-top:20px;}
+.ptop_30 { padding-top:30px;}
+
+.pbot_10 { padding-bottom:10px;}
+.pbot_15 { padding-bottom:15px;}
+.pbot_20 { padding-bottom:20px;}
+.pbot_30 { padding-bottom:30px;}
+
+.bdr    { border:#cecece 1px solid;}
+.bdr_t  { border-top:#cecece 1px solid;}
+.bdr_r  { border-right:#cecece 1px solid;}
+.bdr_b  { border-bottom:#cecece 1px solid;}
+.bdr_l  { border-left:#cecece 1px solid;}
+
+.form-group { margin-bottom:0px; }
+
+/* Button Common CSS Start */
+.Button{ background: #ffe500; font-size: 16px; color: #000000; min-width: 160px; height: 52px; line-height: 52px; display: inline-block;
+text-align: center; text-decoration: none; text-transform: uppercase; padding: 0px;}
+.Button:hover { text-decoration: none; background: #032632; color: #ffffff;}
+/* Button Common CSS End */
+
+
+.hover {    
+    -webkit-transition: background-color 275ms ease-out 0.2s;
+    -moz-transition: background-color 275ms ease-out 0.2s;
+    -o-transition: background-color 275ms ease-out 0.2s;
+    transition: background-color 275ms ease-out 0.2s;
+    transition: all .25s ease-in;
+}
+.hover:hover{
+
+    -webkit-transition: background-color 275ms ease-out 0.2s;
+    -moz-transition: background-color 275ms ease-out 0.2s;
+    -o-transition: background-color 275ms ease-out 0.2s;
+    transition: background-color 275ms ease-out 0.2s;
+    transition: all .25s ease-in;       
+}
+
+
+
+
+/* common css for buttons */
+
+.ViewBtn { width: 194px; height: 58px; line-height: 58px; background: #ffe500; font-size: 16px; color: #000000;}
+.ViewBtn:hover{ background: #032632; color:#ffffff;}
+
+
+.HideDesktop{ display: none;}
+
+
+
+@media (max-width:1440px) {
+ 
+}
+
+@media (max-width:1200px) {
+    
+}
+
+@media ( max-width:1024px) {
+    
+}
+
+@media (max-width:767px) {
+
+  
+}
+
+@media (max-width: 767px) {
+    .HideDesktop { display: block;}
+    .HideMobile { display: none;}
+}
+    
+
+
+
+
+
