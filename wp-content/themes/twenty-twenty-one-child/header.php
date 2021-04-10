@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?> <?php twentytwentyone_the_html_classes(); ?>>
 
 <head>
-  <title>CCS MACHANICAL</title>
+  <title>CCS MACHANICAL TEST 1234565</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
