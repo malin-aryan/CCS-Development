@@ -4,7 +4,7 @@
               <div class="row">
                 <div class="col-md-3">
                   <div class="w-100 FootBox">
-                    <p>Quick Links</p>
+                    <p>Quick Links only for testing</p>
                     <ul>
                   <li> <a href="about-us.html">About Us</a></li>
                   <li> <a href="approach.html">Approach </a></li>
