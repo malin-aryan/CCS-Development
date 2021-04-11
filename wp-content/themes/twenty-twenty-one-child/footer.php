@@ -4,7 +4,7 @@
               <div class="row">
                 <div class="col-md-3">
                   <div class="w-100 FootBox">
-                    <p>Quick Links only for testing</p>
+                    <p>Quick Links</p>
                     <ul>
                   <li> <a href="about-us.html">About Us</a></li>
                   <li> <a href="approach.html">Approach </a></li>
@@ -81,9 +81,9 @@
 
 
 
-  <script src="j<?php bloginfo('template_directory'); ?>/s/jquery.min.js"></script>
-  <script src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
-  <script src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
+  <!-- <script src="<?php //bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
+  <script src="<?php //bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
+  <script src="<?php //bloginfo('template_directory'); ?>/js/script.js"></script> -->
 
   <?php wp_footer(); ?>
 </body>

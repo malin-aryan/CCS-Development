@@ -10,13 +10,17 @@ get_header();
 
 ?>
 
-<section class="w-100 AboutWrapper">
+    <section class="w-100 AboutWrapper">
       <div class="custom-container">
         <div class="row">
           <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
             <div class="w-100 AboutImg">
               <div class="ImgBox">
-                <img src="<?php bloginfo('template_directory'); ?>/images/About-Us.jpg" alt="">
+                 <?php 
+                  $image = get_field('about_us_image');
+                  
+                ?>
+                <img src="<?php echo $image;?>" alt="">
               </div>
               <!--/.ImgBox-->
 
@@ -48,14 +52,9 @@ get_header();
           <!--/.cols-->
           <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
             <div class="w-100 AboutRgtCont">
-              <h3>About <span>Us</span></h3>
-              <p>Established in 1969, CCS Mechanical, Inc. has become one of Florida's premiere specialty contractors
-                with a
-                focus on mechanical systems for schools, hospitals, correctional institutions, industrial facilities,
-                and commercial
-                buildings of all types.</p>
-              <p>Product knowledge and project diversity compliment our solid business practices and diligent work
-                ethic.</p>
+              <h3><?php the_field('about_us'); ?></h3>
+              <?php the_field('about_us_content'); ?>
+              
 
               <a href="about-us.html" class="Button">View More...</a>
             </div>
@@ -73,9 +72,13 @@ get_header();
         <div class="row">
           <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
             <div class="w-100 VintLeft">
-              <h4>Verticle Integration <span> Offer Quality Assurance</span></h4>
+              <h4><?php the_field('verticle_integration'); ?></h4>
               <div class="w-100 VintImage">
-                <img src="<?php bloginfo('template_directory'); ?>/images/Intigration-Image.png" alt="">
+                <?php 
+                  $image = get_field('verticle_integration_image');
+                  
+                ?>
+                <img src="<?php echo $image ;?>" alt="">
               </div>
               <!--/.VintImage-->
             </div>
@@ -85,7 +88,8 @@ get_header();
           <!--/.cols-->
           <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
             <div class="w-100 VintRgt">
-              <p>Under the leadership of the family patriarch, CCS Mechanical started as an installer of residential
+              <?php the_field('verticle_integration_content'); ?>
+              <!-- <p>Under the leadership of the family patriarch, CCS Mechanical started as an installer of residential
                 ductwork in 1969.
                 By 1984, with Louie Wise Jr. at the helm, CCS Mechanical expanded into commerical, industrial and public
                 works projects.
@@ -108,7 +112,7 @@ get_header();
                   maintaining our competitiveness. </li>
                 <li>CCS Mechanical will achieve a more visible corporate imagethrough quality projects,
                   industry leading innovations and community service. </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
           <!--/.cols-->
@@ -122,8 +126,7 @@ get_header();
         <div class="row">
           <div class="col-md-12">
             <div class="Heading">
-              <h4>CCS Mechanical
-                <span> Qualified Markets</span>
+              <h4><?php the_field('ccs_mechanical'); ?>
               </h4>
             </div>
           </div>
@@ -342,9 +345,9 @@ get_header();
           <div class="row">
             <div class="col-md-12">
                 <div class="w-100 heading">
-                      <h6>Newsletter <span>Archive</span></h6>
-                      <p>Our monthly newsletter is published and distributed to CCS Mechanical employees. It is a great source for local building mechanical industry news and events. 
-                        You can find the latest and past newsletter issues listed above in Adobe Acrobat PDF format. You should download the latest version of Adobe Acrobat Reader if you do not currently have it installed on your computer.</p>
+                      <h6><?php the_field('newsletter'); ?></h6>
+                      <?php the_field('newsletter_content'); ?>
+                      
                 </div>
             </div><!--cols-->
           </div><!--/.row-->

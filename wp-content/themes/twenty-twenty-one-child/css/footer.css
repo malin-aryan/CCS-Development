@@ -1,0 +1,27 @@
+.TopFooter { padding: 90px 0px; background-image: url('<?php bloginfo('template_directory'); ?>/images/CCS-Mechanical-footerbgr.jpg'); background-repeat: no-repeat;
+background-position: center bottom; background-size: cover;}
+.TopFooter .FootBox p { font-family: 'Conv_Oswald-Regular'; font-size: 18px; color: #ffffff; padding: 0 0 30px 0; }
+.TopFooter .FootBox ul { margin: 0px; padding: 0px; list-style-type: none;width: 100%;}
+.TopFooter .FootBox ul li { margin: 0 0 15px 0;}
+.TopFooter .FootBox ul li a { font-size: 13px; text-decoration: none; color: #ffffff;}
+.TopFooter .FootBox ul li a:hover{ color:#008692;}
+
+.TopFooter .FootBox p.address { font-size: 14px; line-height: 24px; 	font-family: 'Conv_DMSans-Regular';}
+.TopFooter .FootBox p.office-hours { font-size: 13px; line-height: 24px; 	font-family: 'Conv_DMSans-Regular'; padding: 50px 0 0 0;}
+
+.BotFooter { background-color: #032632; padding: 25px 0; text-align: center;}
+.BotFooter p { font-size: 12px; color: #ffffff;}
+
+@media (max-width:767px) {
+    .TopFooter { padding: 30px 0;}
+    .TopFooter .FootBox p {  padding: 0 0 15px 0;   } 
+    .FootBox { border-bottom:#0e3d4d 1px solid; margin: 0 0 15px 0;}
+    .TopFooter .FootBox p.office-hours { padding: 20px 0 15px 0;  }
+}
+
+@media (max-width:479px) {
+
+    .Newsletter .SubsRight { margin: 25px 0 0 0;}
+    .TopFooter {  padding:15px 0 0 0;  }
+    .TopFooter { padding:30px 0  0; }
+}
