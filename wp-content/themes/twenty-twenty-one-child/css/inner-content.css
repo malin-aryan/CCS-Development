@@ -1,6 +1,7 @@
  .InnerTop h2 { font-family: 'Conv_Oswald-Regular'; font-size:26px; line-height:36px  }
- .InnerBot h3 { font-family: 'Conv_Oswald-Regular'; font-size:20px; margin: 20px 0; }
- .InnerBot h4 { font-family: 'Conv_Oswald-Regular'; font-size:20px; margin: 20px 0; }
+ .InnerBot h3 { font-family: 'Conv_Oswald-Regular'; font-size:20px; margin: 15px 0; }
+ .InnerBot h4 { font-family: 'Conv_Oswald-Regular'; font-size:20px; margin: 15px 0; }
+ .InnerBot p { font-size: 14px; line-height: 22px; padding: 0 0 15px 0; text-align: justify;}
 
  .InnerBot .AboutBox { background-color: #f5f5f5; color: #000000; padding: 30px; min-height: 100px; display:flex; 
   justify-content: center; align-items: center; border-radius:10px; margin: 0 0 30px 0; }
@@ -20,8 +21,7 @@ display: flex; flex-direction: column; align-items: center; justify-content: cen
    font-size: 16px; text-decoration: none; text-align: center;}
    .List1 li a:hover{ background: #000000;  }
 
-   .community-area .com-image img { width: 100%;}
-
+   .community-area .com-image img { width: 100%;}sssss
    ul.list2 { margin: 0px; padding: 0px; list-style-type: none; width: 100%;}
    ul.list2 li { background: #f9f9f9; min-height: 60px; padding: 15px 15px; margin: 0 0 10px 0; font-size: 16px; line-height: 24px;
 border-radius: 3px; display: flex; align-items: center; border: #f5f5f5 1px solid;  }
@@ -35,9 +35,107 @@ ul.list2 li:hover{ background: #ffe500; color: #000000; border:#ffe500 1px solid
 .InnerBot .Testimonial-Box .TestContent  p { font-size: 16px; line-height: 24px; margin: 0 0 10px 0;}
 .InnerBot .Testimonial-Box .TestContent  p span { display: block;}
 .Testimonial-Box  .TestBy { display: flex; align-items: center; justify-content: flex-end; margin:15px 0 0 0; padding: 20px 0 0 0;
-border-top: #dcdcdc 1px solid;}
+border-top: #dcdcdc 1px solid; }
 .Testimonial-Box  .TestBy img { max-width: 80px; border-radius: 40px; margin: 0 0 0 30px;}
 .Testimonial-Box  .TestBy span p { text-align: right; font-size: 13px; line-height: 20px;} 
 .Testimonial-Box  .TestBy span p.name{ color:#008692; font-size: 14px; font-weight: bold; }
 
+
+.ProjectsDetails .ProjectBox { background: rgba(249,249,249,0.3); padding:30px; min-height: 430px; border: #f0f0f0 1px solid;
+border-radius: 4px; margin: 0 0 30px 0;}
+.ProjectsDetails .ProjectBox:hover{ background:rgba(245,245,245,0.4);}
+.ProjectBox .PImage { margin: 0 0 15px 0;}
+.ProjectBox .PImage img { width: 100%; height: 200px; object-fit:cover; object-position: center;}
+.ProjectBox .PContent p.heading{ font-family: 'Conv_Oswald-Regular'; font-size: 18px; color: #032632 ; position: relative; padding: 0 0 15px 0;
+  margin: 0 0 15px 0;}
+.ProjectBox .PContent p.heading:before{ position: absolute; width: 60px; height: 2px; background: #032632; content: " ";
+  bottom: 0px;}
+.ProjectBox .PContent p { font-size: 14px; line-height: 20px; padding: 0 0 15px 0;}
+.ProjectBox .PContent a{ color: #008692; font-size: 13px;}
+.ProjectBox .PContent p b { font-weight: bold; font-size: 16px;}
+.ProjectBox .PContent p:last-child{ padding-bottom:0px ;}
+
+
+
+.ProjectsDetails.ProjectList .ProjectBox { min-height: 300px; }
+
+.ProjectsInclude { background: #032632; padding: 30px 28px; border-radius: 10px;}
+.ProjectsInclude .table { margin: 0px;}
+.ProjectsInclude .table thead tr th { padding: 15px 10px 15px 15px; border-bottom: 0px; color: #ffffff; font-weight: bold;
+background: #008692;}
+.ProjectsInclude .table tbody tr td { padding: 10px 10px 10px 15px; border-bottom: 0px; color: #ffffff; font-size: 14px;  }
+
+.ProjectsDetails.ViewProjectDetails .ProjectBox .PImage img { height: 500px; }
+
+.ContactForm .form-group .form-control { height: 50px; line-height: 46px; margin: 0 0 20px 0;}
+.ContactForm .form-group label { margin: 0 0 15px 0px;}
+.ContactForm .form-group .form-control.message { height: 130px; resize: none; } 
+.ContactForm .form-group .btn { border-radius: 0px; padding: 0px; border: 0px; font-size: 18px; text-transform: uppercase;}
+.Contact-left p { line-height: 24px; font-size: 14px;   }
+
+.FormWrapper .FWLeft .nav-tabs { border-color: transparent; border: 0px; border-top: #dcdcdc 1px solid; }
+
+.FormWrapper .FWLeft .nav-tabs > li { width: 100%; border: #dcdcdc 1px solid;  margin: 0px; border-top: 0px;}
+.FormWrapper .FWLeft .nav-tabs > li > a {   margin-right: 0px;  line-height:auto;  border: 1px solid transparent;
+  border-radius:0; border-top-left-radius: 0px; border-top-right-radius: 0px; text-align: center; padding:40px 0px 55px 0px;
+font-size: 18px; color:#000000; font-family: 'Conv_Oswald-Regular';}
+  .FormWrapper .FWLeft .nav-tabs > li > a span { display: block; padding:15px 0 0px 0px;}
+  .FormWrapper .FWLeft .nav-tabs > li > a.active { background: #efefef; color: #032632; border: 0px;}
+  .FormWrapper .FWLeft .nav-tabs > li > a span img { max-width: 25px;}
+.nav-tabs .nav-link.active {color: #495057; background-color: #fff; border-color: #dee2e6 #dee2e6 #fff; }
+
+.FormWrapper .tab-content h3 { margin-top: 0px; }
+.FormWrapper .tab-content label { margin: 0 0 10px 0; }
+.FormWrapper .tab-content .input { margin: 0 0 15px 0;}
+
+
+@media (max-width:1600px) {
+
+} /* End 1600px*/
+
+@media (max-width:1440px) {
+
+}/* End 1440px*/
  
+
+@media (max-width:1366px) {
+
+}/* End 1366px*/
+
+@media (max-width:1300px) {
+
+}/* End 1300px*/
+
+@media (max-width:1200px) {
+
+} /* End 1200px*/
+
+@media (max-width:1024px) {
+
+} /* End 1024px*/
+
+@media (max-width:992px) {
+
+} /* End 992px*/
+
+@media (max-width:767px) {
+
+} /* End 767px*/
+
+@media (max-width:576px) {
+
+} /* End 576px*/
+
+@media (max-width:479px) {
+
+}  /* End 479px*/
+
+@media (max-width:413px) {
+
+}
+
+@media (max-width:375px) {
+
+} /* End 375px*/
+
+

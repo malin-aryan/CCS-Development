@@ -4,8 +4,10 @@
 
 
 .TopHeader { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 28px 0px 15px 0px;}
-.TopHeader .th-left ul { margin: 0px; padding: 0px; list-style-type: none;}
-.TopHeader .th-left ul li{ padding: 0 30px 0 0; font-size: 12px; color:#b2d6e6; display: inline;}
+.TopHeader .th-left ul { margin: 0px; padding: 0px; list-style-type: none; display:flex; }
+.TopHeader .th-left ul li{ padding: 0 30px 0 0; font-size: 12px; color:#b2d6e6; display: inline; display:flex; align-items:center;}
+.TopHeader .th-left ul li img { max-width: 10px; margin:0px 5px 0 0px;}
+.TopHeader .th-left ul li img.email { max-width: 13px;}
 .TopHeader .th-right { padding:0px 0px; text-align: right;}
 .TopHeader .th-right ul { margin: 0px; padding: 0px; list-style-type: none;}
 .TopHeader .th-right ul li { display: inline;}
@@ -15,7 +17,7 @@
 .NavbarHeader .navbar-nav { display: flex; align-items: center; justify-content: center;}
 .NavbarHeader .navbar-nav li.logo { padding: 0 50px; text-align: center;}
 .NavbarHeader .navbar-nav li.logo img{ max-width: 130px; margin: 0 0 15px 0; }
-.NavbarHeader .navbar-nav li.logo p { font-size: 10px; color: #ffffff;}
+.NavbarHeader .navbar-nav li.logo p { font-size: 10px; color: #ffffff; }
 .NavbarHeader .navbar-expand-md .navbar-nav .nav-link { padding: 0 60px; color: #ffffff; font-size: 16px; text-transform: uppercase; }
 .NavbarHeader .navbar { padding: 0px; margin: 0px;}
 

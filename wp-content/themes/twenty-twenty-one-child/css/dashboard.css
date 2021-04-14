@@ -1,0 +1,70 @@
+.dbleft  { overflow: hidden;  }
+.dbleft .dbl-head {  padding:35px 30px; display: flex; align-items: center;
+border-bottom: #f5f5f5 1px solid; }
+.dbleft .dbl-head img { max-width: 50px; margin: 0 20px 0 0;}
+.dbleft .dbl-head h2 { font-family: 'Conv_Oswald-Regular'; }
+
+.dbleft .dbl-list {  padding:30px 30px; }
+.dbleft .dbl-list ul { margin: 0px; padding: 0px; list-style-type: none; }
+.dbleft .dbl-list ul li a {  display:block; color: #000000; padding: 20px 0px 20px 15px; font-size: 18px; background: #f5f5f5;
+ border:#f5f5f5 1px solid; margin: 0 0 5px 0; text-decoration: none; border-radius: 5px;}
+.dbleft .dbl-list ul li a:hover, .dbleft .dbl-list ul li a:focus{ background: #ffe500; color: #000000; border:#ffe500 1px solid;}
+
+.dbright .goolge-calender { height: 700px;}
+
+.EmployeeArya .dbr-content ul { margin: 0px; padding: 0px; list-style-type: none; }
+.EmployeeArya .dbr-content ul li { margin: 0 0 15px 0; }
+.EmployeeArya .dbr-content ul li a { font-size: 16px; text-decoration: none; line-height: 24px; color: #008692;}
+.EmployeeArya .dbr-content ul li a span { font-size: 16px; }
+
+
+
+@media (max-width:1600px) {
+
+
+} /* End 1600px*/
+
+@media (max-width:1440px) {
+
+}/* End 1440px*/
+ 
+
+@media (max-width:1366px) {
+
+}/* End 1366px*/
+
+@media (max-width:1300px) {
+
+}/* End 1300px*/
+
+@media (max-width:1200px) {
+
+} /* End 1200px*/
+
+@media (max-width:1024px) {
+
+} /* End 1024px*/
+
+@media (max-width:992px) {
+
+} /* End 992px*/
+
+@media (max-width:767px) {
+
+} /* End 767px*/
+
+@media (max-width:576px) {
+
+} /* End 576px*/
+
+@media (max-width:479px) {
+
+}  /* End 479px*/
+
+@media (max-width:413px) {
+
+}
+
+@media (max-width:375px) {
+
+} /* End 375px*/

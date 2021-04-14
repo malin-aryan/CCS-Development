@@ -9,10 +9,16 @@ add_action( 'wp_head', 'my_favicon_link' );
 
 add_action( 'wp_enqueue_scripts', 'my_plugin_add_stylesheet' );
 function my_plugin_add_stylesheet() {
-    wp_enqueue_style( 'my-style', get_stylesheet_directory_uri() . '/css/style.css' );
+    wp_enqueue_style( 'style', get_stylesheet_directory_uri() . '/css/style.css' );
     wp_enqueue_script( 'theme_js', get_stylesheet_directory_uri() . '/js/jquery.min.js', array( 'jquery' ), '1.0', true );
     wp_enqueue_script( 'bootstrap_js', get_stylesheet_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '1.0', true );
     wp_enqueue_script( 'script_js', get_stylesheet_directory_uri() . '/js/script.js', array( 'jquery' ), '1.0', true );
 }
 
 
+
+
+add_filter( 'nav_menu_link_attributes', function($atts) {
+        $atts['class'] = "nav-link";
+        return $atts;
+}, 100, 1 );

@@ -1,4 +1,4 @@
-.TopFooter { padding: 90px 0px; background-image: url('<?php bloginfo('template_directory'); ?>/images/CCS-Mechanical-footerbgr.jpg'); background-repeat: no-repeat;
+.TopFooter { padding: 90px 0px; background-image: url('../images/CCS-Mechanical-footerbgr.jpg'); background-repeat: no-repeat;
 background-position: center bottom; background-size: cover;}
 .TopFooter .FootBox p { font-family: 'Conv_Oswald-Regular'; font-size: 18px; color: #ffffff; padding: 0 0 30px 0; }
 .TopFooter .FootBox ul { margin: 0px; padding: 0px; list-style-type: none;width: 100%;}
