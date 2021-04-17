@@ -11,7 +11,7 @@
 </head>
 
 <?php
-if ( is_page( array( 'about-us','approach','projects' ) ) ) {
+if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter','vendor' ) ) ) {
 
   $InnerHeader = "InnerHeader";
   $innerClass = "InnerBanner";
@@ -131,9 +131,9 @@ if ( is_page( array( 'about-us','approach','projects' ) ) ) {
 
               <h1> <span>CCS</span> Approach <b class="estb"></b></h1>
 
-            <?php }else if(is_page('projects')){ ?>  
+            <?php }else if(is_page(array( 'projects','testimonials','newsletter','vendor' ))){ ?>  
 
-              <h1> <span>CCS</span> Projects <b class="estb"></b> </h1>
+              <h1> <span>CCS</span> <?php the_title(); ?> <b class="estb"></b> </h1>
 
             <?php }else{ ?>  
               
