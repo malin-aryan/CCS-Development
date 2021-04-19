@@ -1,3 +1,48 @@
+
+<section class="w-100 Newsletter">
+      <div class="custom-container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="w-100 SubsLeft">
+              <h5>Want to get updates?
+                <span> Subscribe to our Newsletter</span>
+              </h5>
+            </div>
+            <!--/.SubsLeft-->
+          </div>
+          <!--/.cols-->
+          <div class="col-md-6">
+            <!-- <div class="w-100 SubsRight"> -->
+
+
+                <!-- <div class="tnp tnp-subscription"> -->
+                  <form class="w-100 SubsRight" method="post" action="http://localhost/CCSDevelopment/?na=s">
+
+                    <input type="hidden" name="nlang" value="">
+                    
+                      
+                      <input class=" form-control subemail" type="email" name="ne" value="" placeholder="Example: xys@gmail.com" required>
+                    
+                      <input class="tnp-submi t btn subbtn" type="submit" value="Subscribe" >
+
+                                       
+                  </form>
+                <!-- </div> -->
+
+                      <!-- <input type="text" class="form-control subemail" placeholder="Example: xys@gmail.com"> <button type="submit" class="btn subbtn">Subscribe</button> -->
+
+
+            <!-- </div> -->
+            <!--/.SubsRight-->
+          </div>
+          <!--/.cols-->
+        </div>
+        <!--/.row-->
+      </div>
+      <!--/.custom-container-->
+
+    </section>
+
 <footer class="w-100 FooterWrapper">
         <div class="w-100 TopFooter">
           <div class="custom-container">

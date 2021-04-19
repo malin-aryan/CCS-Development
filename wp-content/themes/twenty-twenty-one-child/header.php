@@ -6,12 +6,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
-  
+  <style type="text/css">.th-right a {
+    display: inline;
+}</style>
   <?php wp_head(); ?>
 </head>
 
 <?php
-if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter','vendor' ) ) ) {
+if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter','vendor','contact-us' ) ) ) {
 
   $InnerHeader = "InnerHeader";
   $innerClass = "InnerBanner";
@@ -41,11 +43,15 @@ if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter
               </div> <!--/.cols-->
               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                 <div class="th-right">
-                  <ul>
+                  <?php  
+
+                    wp_nav_menu( array('container' => 'false', 'menu' => 'uper left menu','items_wrap'=>'<ul>%3$s</ul>' ) );
+                  ?>
+                  <!-- <ul>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="faq.html">FAQ's</a></li>
                     <li><a href="">Contact Us</a></li>
-                  </ul>
+                  </ul> -->
                 </div> <!--/.th-right-->
               </div> <!--/.cols-->
             </div> <!--/.row-->
@@ -134,6 +140,10 @@ if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter
             <?php }else if(is_page(array( 'projects','testimonials','newsletter','vendor' ))){ ?>  
 
               <h1> <span>CCS</span> <?php the_title(); ?> <b class="estb"></b> </h1>
+
+            <?php }else if(is_page(array( 'contact-us'))){ ?>  
+
+              <h1> <span>Contact</span> Us <b class="estb"></b></h1>
 
             <?php }else{ ?>  
               

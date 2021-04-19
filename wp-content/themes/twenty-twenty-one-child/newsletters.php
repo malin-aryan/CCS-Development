@@ -101,30 +101,6 @@ get_header();
 
 
 
-    <section class="w-100 Newsletter">
-      <div class="custom-container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="w-100 SubsLeft">
-              <h5>Want to get updates?
-                <span> Subscribe to our Newsletter</span>
-              </h5>
-            </div>
-            <!--/.SubsLeft-->
-          </div>
-          <!--/.cols-->
-          <div class="col-md-6">
-            <div class="w-100 SubsRight">
-                 <input type="text" class="form-control subemail" placeholder="Example: xys@gmail.com"> <button class="btn subbtn">Subscribe</button>
-            </div>
-            <!--/.SubsRight-->
-          </div>
-          <!--/.cols-->
-        </div>
-        <!--/.row-->
-      </div>
-      <!--/.custom-container-->
-
-    </section>
+  
 <?php
 get_footer();
