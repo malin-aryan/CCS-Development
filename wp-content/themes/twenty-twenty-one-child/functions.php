@@ -22,3 +22,26 @@ add_filter( 'nav_menu_link_attributes', function($atts) {
         $atts['class'] = "nav-link";
         return $atts;
 }, 100, 1 );
+
+/* ============ Testimonials ============ */
+
+add_action( 'init', 'create_custom_post_type' );
+
+function create_custom_post_type() {
+
+   $labels = array(
+    'name' => __( 'Testimonials' ),
+    'singular_name' => __( 'Testimonials' )
+    );
+
+    $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'supports'  => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+    'has_archive' => true,
+    'menu_icon' => 'dashicons-format-status',
+    'rewrite' => array('slug' => 'testimonials'),
+    );
+
+  register_post_type( 'testimonials', $args);
+}
