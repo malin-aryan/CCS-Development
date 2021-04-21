@@ -16,7 +16,7 @@
 
 
                 <!-- <div class="tnp tnp-subscription"> -->
-                  <form class="w-100 SubsRight" method="post" action="http://localhost/CCSDevelopment/?na=s">
+                  <form class="w-100 SubsRight" method="post" action="<?php echo get_site_url(); ?>?na=s">
 
                     <input type="hidden" name="nlang" value="">
                     
