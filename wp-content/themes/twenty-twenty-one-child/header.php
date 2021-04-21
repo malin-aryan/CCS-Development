@@ -153,7 +153,7 @@ if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter
               <p>Product knowledge and project diversity compliment our solid
                 <span> business practices and diligent work ethic.</span>
               </p>
-              <a href="about-us.html" class="Button">View More...</a>
+              <a href="<?php echo get_site_url(); ?>/about-us" class="Button">View More...</a>
 
             <?php } ?>
 

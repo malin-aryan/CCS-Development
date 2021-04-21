@@ -56,7 +56,7 @@ get_header();
               <?php the_field('about_us_content'); ?>
               
 
-              <a href="about-us.html" class="Button">View More...</a>
+              <a href="<?php echo get_site_url(); ?>/about-us" class="Button">View More...</a>
             </div>
             <!--/.AboutRgtCont-->
 
