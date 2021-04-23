@@ -6,14 +6,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css">
-  <style type="text/css">.th-right a {
-    display: inline;
-}</style>
+  <style type="text/css">
+    .th-right a {display: inline;}
+    img.custom-logo {width: auto;height: auto;}
+    .FootBox a.nav-link {display: inline;padding: 0;}
+  </style>
   <?php wp_head(); ?>
 </head>
 
 <?php
-if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter','vendor','contact-us' ) ) ) {
+if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter','vendor','contact-us','employment-opportunities','terms-of-use','privacy-statement','commercial-projects','correctional-projects','educational-projects','healthcare-projects','industrial-projects' ) ) ) {
 
   $InnerHeader = "InnerHeader";
   $innerClass = "InnerBanner";
@@ -77,7 +79,6 @@ if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <?php  
-
                   wp_nav_menu( array('menu_class' => 'navbar-nav', 'menu' => 'top left menu' ) );
                 ?>
               <ul class="navbar-nav">
@@ -91,8 +92,9 @@ if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter
                   <a class="nav-link" href="projects.html">Projects</a>
                 </li> -->
                 <li class="HideMobile logo">
-                  <a href="index.html">
-                    <img src="<?php bloginfo('template_directory'); ?>/images/CCS-Mechanical.png" alt="">
+                  <a href="<?php  site_url('/');?>">
+                     <?php echo get_custom_logo(); ?>
+                    <!-- <img src="<?php //bloginfo('template_directory'); ?>/images/CCS-Mechanical.png" alt=""> -->
                   </a>
                   <p>We dont indent to be the biggest... Just the best.</p>
                 </li>
@@ -106,8 +108,7 @@ if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter
                   <a class="nav-link" href="vendor.html">Vendor</a> -->
                 </li>
               </ul>
-              <?php  
-
+                <?php  
                   wp_nav_menu( array('menu_class' => 'navbar-nav', 'menu' => 'top right menu' ) );
                 ?>
             </div>
@@ -137,7 +138,7 @@ if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter
 
               <h1> <span>CCS</span> Approach <b class="estb"></b></h1>
 
-            <?php }else if(is_page(array( 'projects','testimonials','newsletter','vendor' ))){ ?>  
+            <?php }else if(is_page(array( 'projects','testimonials','newsletter','vendor','employment-opportunities','terms-of-use','privacy-statement','commercial-projects','correctional-projects','educational-projects','healthcare-projects','industrial-projects' ))){ ?>  
 
               <h1> <span>CCS</span> <?php the_title(); ?> <b class="estb"></b> </h1>
 
