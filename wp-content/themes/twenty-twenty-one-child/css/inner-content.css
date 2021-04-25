@@ -1,6 +1,6 @@
  .InnerTop h2 { font-family: 'Conv_Oswald-Regular'; font-size:26px; line-height:36px  }
- .InnerBot h3 { font-family: 'Conv_Oswald-Regular'; font-size:20px; margin: 15px 0; }
- .InnerBot h4 { font-family: 'Conv_Oswald-Regular'; font-size:20px; margin: 15px 0; }
+ .InnerBot h3 { font-family: 'Conv_Oswald-Regular'; font-size:20px; line-height: 24px; margin: 15px 0; }
+ .InnerBot h4 { font-family: 'Conv_Oswald-Regular'; font-size:20px; line-height: 24px; margin: 15px 0; }
  .InnerBot p { font-size: 14px; line-height: 22px; padding: 0 0 15px 0; text-align: justify;}
 
  .InnerBot .AboutBox { background-color: #f5f5f5; color: #000000; padding: 30px; min-height: 100px; display:flex; 
@@ -32,12 +32,12 @@ ul.list2 li:hover{ background: #ffe500; color: #000000; border:#ffe500 1px solid
 .InnerBot .Testimonial-Box {  background-color: #f9f8f7; padding:30px 20px; margin: 0 0  30px 0; overflow: hidden; }
 .Testimonial-Box .TestImg img { width: 100%; border-radius: 3px; max-width:180px;}
 .InnerBot .Testimonial-Box .TestContent  h4 { margin-top: 0px; color: #008692;}
-.InnerBot .Testimonial-Box .TestContent  p { font-size: 16px; line-height: 24px; margin: 0 0 10px 0;}
+.InnerBot .Testimonial-Box .TestContent  p { font-size: 16px; line-height: 22px; margin: 0 0 10px 0; padding: 0px;}
 .InnerBot .Testimonial-Box .TestContent  p span { display: block;}
 .Testimonial-Box  .TestBy { display: flex; align-items: center; justify-content: flex-end; margin:15px 0 0 0; padding: 20px 0 0 0;
 border-top: #dcdcdc 1px solid; }
 .Testimonial-Box  .TestBy img { max-width: 80px; border-radius: 40px; margin: 0 0 0 30px;}
-.Testimonial-Box  .TestBy span p { text-align: right; font-size: 13px; line-height: 20px;} 
+.Testimonial-Box  .TestBy span p { text-align: right; font-size: 13px; line-height: 20px; padding: 0px;} 
 .Testimonial-Box  .TestBy span p.name{ color:#008692; font-size: 14px; font-weight: bold; }
 
 
@@ -75,7 +75,7 @@ background: #008692;}
 
 .FormWrapper .FWLeft .nav-tabs { border-color: transparent; border: 0px; border-top: #dcdcdc 1px solid; }
 
-.FormWrapper .FWLeft .nav-tabs > li { width: 100%; border: #dcdcdc 1px solid;  margin: 0px; border-top: 0px;}
+.FormWrapper .FWLeft .nav-tabs > li { width: 100%; border: #dcdcdc 1px solid;  margin: 0px; border-top: 0px; background: #efefef;}
 .FormWrapper .FWLeft .nav-tabs > li > a {   margin-right: 0px;  line-height:auto;  border: 1px solid transparent;
   border-radius:0; border-top-left-radius: 0px; border-top-right-radius: 0px; text-align: center; padding:40px 0px 55px 0px;
 font-size: 18px; color:#000000; font-family: 'Conv_Oswald-Regular';}
@@ -107,26 +107,49 @@ font-size: 18px; color:#000000; font-family: 'Conv_Oswald-Regular';}
 }/* End 1300px*/
 
 @media (max-width:1200px) {
+  .FormWrapper .FWLeft { margin: 0 0 15px 0px;}
+  .FormWrapper .FWLeft .nav-tabs > li { width: 33.33%;}
+  .FormWrapper .FWLeft .nav-tabs > li > a { padding: 0px 0 15px 0px;}
 
 } /* End 1200px*/
 
 @media (max-width:1024px) {
 
+  .List1{ display: block; }
+  .List1 li { margin: 0 0 15px 0; display: inline-block; width: 100%; }
+
 } /* End 1024px*/
 
 @media (max-width:992px) {
+  
+
+
+  
 
 } /* End 992px*/
 
 @media (max-width:767px) {
+  .InnerBot .AboutBox { margin: 0 0 15px 0; padding: 15px;}
+
+  .ProjectsDetails .ProjectBox { padding:15px; margin: 0 0 15px 0;}
+
+  .InnerBot .Testimonial-Box .TestImg { margin: 0 0 15px 0px;}
+  .InnerBot .Testimonial-Box { padding: 15px;}
+  .Testimonial-Box .TestBy img {  max-width: 50px;  margin: 0 0 0 15px;}
+
+
+
 
 } /* End 767px*/
 
 @media (max-width:576px) {
+  .FormWrapper .FWLeft .nav-tabs > li > a { font-size: 13px;}
+  .FormWrapper .FWLeft .nav-tabs > li > a span img { max-width: 20px;}
 
 } /* End 576px*/
 
 @media (max-width:479px) {
+ 
 
 }  /* End 479px*/
 

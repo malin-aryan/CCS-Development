@@ -99,7 +99,7 @@
       .TopNavWrapper { position: static; background-color: #032632; }
       .BannerWrapper { position: static;}
       .TopHeader { padding:0; margin: 0; }
-      .TopHeader .th-left { text-align: center; padding: 10px 0; border-bottom: #0e3d4d 1px solid;}
+      .TopHeader .th-left { text-align: center; padding: 10px 0; border-bottom: #0e3d4d 1px solid; display: flex; justify-content: center;}
       .TopHeader .th-left ul li { padding: 10px 15px;}
       .TopHeader .th-right { text-align: center; padding: 10px 0; border-bottom: #0e3d4d 1px solid;}
       .TopHeader .th-right ul li a { padding: 0 20px;}
@@ -109,18 +109,18 @@
       .navbar-toggler { background: #ffe500;}
       .navbar-brand img {max-width: 40px;}
       .NavbarHeader .navbar .mobileNav { width: 100%; display: flex; align-items: center; justify-content: space-between;}
-      .NavbarHeader .navbar-expand-md .navbar-nav .nav-item { width: 100%; text-align: center; }
-      .NavbarHeader .navbar-expand-md .navbar-nav .nav-link { padding:10px 0px; background: #134759; }
-      .NavbarHeader .navbar-expand-md .navbar-nav .nav-link:hover,
-      .NavbarHeader .navbar-expand-md .navbar-nav .nav-link:focus { background: #ffe500; color: #000000; }
+      .NavbarHeader .navbar-expand-md .navbar-nav li { width: 100%; text-align: center; }
+      .NavbarHeader .navbar-expand-md .navbar-nav li .nav-link { padding:10px 0px; background: #134759; }
+      .NavbarHeader .navbar-expand-md .navbar-nav li .nav-link:hover,
+      .NavbarHeader .navbar-expand-md .navbar-nav li .nav-link:focus { background: #ffe500; color: #000000; }
       .navbar-collapse.in { margin: 8px 0 0 0; padding: 0px; }
       .NavbarHeader .navbar-nav { margin: 15px 0 0 0;}
 
 
-      .BannerWrapper .BannerArea .BannerContent {top: 50px; padding: 0 15px; }
-      .BannerArea .BannerContent h1 { font-size: 30px; padding: 0 0 20px 0; }
-      .BannerArea .BannerContent h2 {font-size: 18px; line-height: 26px; }
-      .BannerArea .BannerContent p { padding: 20px 0px; }
+      .BannerWrapper.InnerBanner .BannerArea .BannerContent {top: 50px; padding: 0 15px; }
+      .BannerWrapper.InnerBanner .BannerArea .BannerContent h1 { font-size: 30px; padding: 0 0 20px 0; }
+      .BannerWrapper.InnerBanner .BannerArea .BannerContent h2 {font-size: 18px; line-height: 26px; }
+      .BannerWrapper.InnerBanner .BannerArea .BannerContent p { padding: 20px 0px; }
 }
 
 @media ( max-width:414px) {

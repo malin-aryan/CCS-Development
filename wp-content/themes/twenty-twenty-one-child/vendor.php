@@ -20,7 +20,7 @@ get_header();
               <h3> Vendor Login</h3>
               <div class="w-100 bgr-g pad_30 bdr mtop_30 rad5 FormWrapper">
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-xl-4 col-lg-12 col-md-12">
                     <div class="w-100 FWLeft">
                       <ul class="nav nav-tabs">
                         <li class="nav-item">
@@ -44,7 +44,7 @@ get_header();
                     <!--/.FWLeft-->
                   </div>
                   <!--/.cols-->
-                  <div class="col-md-8">
+                  <div class="col-xl-8 col-lg-12 col-md-12">
                     <div class="w-100 FWRight">
                       <div class="tab-content">
                         <div id="login" class=" tab-pane active">

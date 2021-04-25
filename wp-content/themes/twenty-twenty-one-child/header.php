@@ -81,7 +81,7 @@ if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter
                 <?php  
                   wp_nav_menu( array('menu_class' => 'navbar-nav', 'menu' => 'top left menu' ) );
                 ?>
-              <ul class="navbar-nav">
+              <ul class="navbar-nav HideMobile">
                 <!-- <li class="nav-item">
                   <a class="nav-link" href="about-us.html">About Us</a>
                 </li>

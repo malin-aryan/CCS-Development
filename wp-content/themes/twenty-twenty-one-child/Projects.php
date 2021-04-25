@@ -30,7 +30,7 @@ get_header();
             <div class="w-100 InnerBot">
               <div class="w-100 ProjectsDetails">
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                     <div class="w-100 ProjectBox">
                       <div class="PImage">
                         <img src="<?php bloginfo('template_directory'); ?>/images/avtar.jpg" alt="">
@@ -47,7 +47,7 @@ get_header();
                     <!--/.ProjectBox-->
                   </div>
                   <!--/.cols-->
-                  <div class="col-md-4">
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                     <div class="w-100 ProjectBox">
                       <div class="PImage">
                         <img src="<?php bloginfo('template_directory'); ?>/images/avtar.jpg" alt="">
@@ -66,8 +66,7 @@ get_header();
                     <!--/.ProjectBox-->
                   </div>
                   <!--/.cols-->
-
-                  <div class="col-md-4">
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                     <div class="w-100 ProjectBox">
                       <div class="PImage">
                         <img src="<?php bloginfo('template_directory'); ?>/images/avtar.jpg" alt="">
@@ -85,7 +84,7 @@ get_header();
                     <!--/.ProjectBox-->
                   </div>
                   <!--/.cols-->
-                  <div class="col-md-4">
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                     <div class="w-100 ProjectBox">
                       <div class="PImage">
                         <img src="<?php bloginfo('template_directory'); ?>/images/avtar.jpg" alt="">
@@ -103,7 +102,7 @@ get_header();
                     <!--/.ProjectBox-->
                   </div>
                   <!--/.cols-->
-                  <div class="col-md-4">
+                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                     <div class="w-100 ProjectBox">
                       <div class="PImage">
                         <img src="<?php bloginfo('template_directory'); ?>/images/avtar.jpg" alt="">
@@ -128,7 +127,7 @@ get_header();
                     <div class="col-md-12">
                       <h4>Chomp's Project Highlights:</h4>
                       <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                           <div class="w-100 ProjectBox">
                             <div class="PImage">
                               <img src="<?php bloginfo('template_directory'); ?>/images/avtar.jpg" alt="">

@@ -20,17 +20,18 @@ get_header();
             ?>
             <?php if ( $the_query->have_posts() ) : ?>
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-            <div class="Testimonial-Box">
+           
               <div class="col-lg-12">
+              <div class="Testimonial-Box">
 
                 <div class="row">
-                  <div class="col-md-2">
+                  <div class="col-md-2 col-sm-3 col-12">
                     <div class="w-100 TestImg">
                       <img src="<?php the_post_thumbnail_url();?>" alt="">
                     </div>
                   </div>
                   <!--/.cols-->
-                  <div class="col-md-10">
+                  <div class="col-md-10 col-sm-9 col-12">
                     <div class="w-100 TestContent">
                       <h4><?php the_title(); ?></h4>
                       <?php the_content(); ?> 
@@ -57,10 +58,11 @@ get_header();
                   <!--/.cols-->
                 </div>
                 <!--/.row-->
+                </div>
+            <!--/.Testimonial-Box-->
               </div>
               <!--/.cols-->
-            </div>
-            <!--/.Testimonial-Box-->
+           
                   
                   
             <?php endwhile;

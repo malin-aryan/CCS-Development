@@ -241,7 +241,7 @@ get_header();
             <!--QB-area-->
           </div>
           <!--/.cols-->
-          <div class="col-md-4">
+          <div class="col-xl-4 col-lg-4 col-md-12">
             <div class="w-100 QB-area">
               <div class="w-100 QB-top">
                 <div class="w-100 QB-Image">

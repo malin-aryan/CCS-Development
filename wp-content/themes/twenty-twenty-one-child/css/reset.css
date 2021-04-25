@@ -267,6 +267,23 @@ text-align: center; text-decoration: none; text-transform: uppercase; padding: 0
 
 
 @media (max-width:1440px) {
+    /* padding common css */
+
+.pad_30 { padding:30px;}
+.pad30_0 { padding: 20px 0px;}
+.pad40_0 { padding: 30px 0px;}
+.pad75_0 { padding: 35px 0px;}
+.ptop_30 { padding-top:20px;}
+.pbot_30 { padding-bottom:20px;}
+
+
+
+
+.mbot_30 { margin-bottom:20px;}
+.mbot_35 { margin-bottom:25px;}
+.mbot_40 { margin-bottom:30px;}
+.mbot_45 { margin-bottom:35px;}
+.mbot_50 { margin-bottom:40px;}
  
 }
 
@@ -285,7 +302,23 @@ text-align: center; text-decoration: none; text-transform: uppercase; padding: 0
 
 @media (max-width: 767px) {
     .HideDesktop { display: block;}
-    .HideMobile { display: none;}
+    .HideMobile { display: none !important;}
+
+    .pad_30 { padding:15px;}
+    .pad30_0 { padding: 15px 0px;}
+    .pad40_0 { padding: 15px 0px;}
+    .pad75_0 { padding: 15px 0px;}
+    .ptop_30 { padding-top:15px;}
+    .pbot_20 { padding-bottom:15px;}
+    .pbot_30 { padding-bottom:15px;}      
+
+    .mbot_30 { margin-bottom:15px;}
+    .mbot_35 { margin-bottom:15px;}
+    .mbot_40 { margin-bottom:15px;}
+    .mbot_45 { margin-bottom:15px;}
+    .mbot_50 { margin-bottom:15px;}
+
+    
 }
     
 
