@@ -15,18 +15,9 @@ get_header();
         <div class="row">
           <div class="col-md-12">
             <div class="w-100 InnerTop mbot_50">
-              <h2 class="t-center x30 pbot_20">Vertical Integration Offers Quality Assurance</h2>
-              <p class="text-center x16">Under the leadership of the family patriarch, CCS Mechanical started as an
-                installer of residential ductwork
-                in 1969. By 1984, with Louie Wise Jr. at the helm, CCS Mechanical expanded into commerical, industrial
-                and
-                public works projects. CCS Mechanical has built a solid reputation through fair business dealing and
-                striving
-                to be on the leading edge of HVAC technology. As a leading business in Ocala, Florida, CCS Mechanical
-                believes
-                that a strong community is built through community service and therefore is active with various local
-                charitable
-                organizations. Today, with 62 employees, CCS Mechanical firmly looks forward to the future.</p>
+              <h2 class="t-center x30 pbot_20"><?php the_field('vertical_integration'); ?></h2>
+              <?php the_field('info'); ?>
+              
             </div>
           </div>
         </div>
@@ -39,29 +30,26 @@ get_header();
               <div class="row">
                 <div class="col-lg-6">
                   <div class="w-100 AboutBox">
-                    <p>Moving into the third generation of family ownership,  CCS Mechanical
-                      continues the highest level of quality workmanship.</p>
+
+                    <p><?php the_field('our_vision'); ?></p>
                   </div> <!--/.AboutBox-->
                     
                 </div> <!--/.cols-->
                 <div class="col-lg-6">
                   <div class="w-100 AboutBox">
-                    <p> Successful integration of training and education into our work place
-                      provides an environment conducive to employee safety, productivity and growth.</p>
+                    <p> <?php the_field('our_vision2'); ?></p>
                    </div> <!--/.AboutBox-->
                   
               </div> <!--/.cols-->
               <div class="col-lg-6">
                 <div class="w-100 AboutBox">
-                  <p> Using state of the art technology,  we will create cost effective solutions
-                    while maintaining our competitiveness.</p>
+                  <p> <?php the_field('our_vision3'); ?></p>
                 </div> <!--/.AboutBox-->
                 
             </div> <!--/.cols-->
             <div class="col-lg-6">
               <div class="w-100 AboutBox">
-                <p>CCS Mechanical will achieve a more visible corporate image through quality projects,
-                  industry leading innovations and community service.</p>
+                <p><?php the_field('our_vision4'); ?></p>
               </div> <!--/.AboutBox-->
               
           </div> <!--/.cols-->
