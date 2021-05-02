@@ -15,13 +15,9 @@ get_header();
         <div class="row">
           <div class="col-md-12">
             <div class="w-100 InnerTop mbot_50">
-              <h2 class="t-center x30 pbot_20">   Vertical Integration Offers Quality Assurance </h2>
-              <p class="text-center x16">
-                In response to our owners, contractors and construction managers, CCS Mechanical provides 85% of our projects
-                 with the use of our own highly qualified and experienced personnel. From conception to completion, our team is
-                  dedicated to finishing projects on time and within budget. Utilizing innovative technologies, in-house fabrication 
-                  processes, and the highest industry standards; we control the end result.
-            </p>
+              <h2 class="t-center x30 pbot_20"> <?php the_field('vertical_integration_offers_quality_assurance'); ?> </h2>
+              <?php the_field('info'); ?> 
+              
             </div>
           </div>
         </div>

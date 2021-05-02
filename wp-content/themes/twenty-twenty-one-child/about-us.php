@@ -55,12 +55,16 @@ get_header();
           </div> <!--/.cols-->
           <div class="col-md-12">
             <div class="w-100 InnerLeft">
-              <ul class="List1">
+              <?php  
+
+                    wp_nav_menu( array('container' => 'false', 'menu' => 'about page menu','items_wrap'=>'<ul class="List1">%3$s</ul>' ) );
+              ?>
+             <!--  <ul class="List1">
                 <li><a href="bonding-contract-methods.html"> Bonding & Contract Methods</a></li>
                 <li><a href="CCS-Fabricator-Newsletter.html">CCS Fabricator Newsletter</a></li>
                 <li><a href="Community-Teamwork.html">Community & Teamwork</a></li>
                 <li><a href="Mission-Statement.html">Mission Statement</a></li>
-              </ul>
+              </ul> -->
             </div>
             <!--/.InnerLeft-->
           </div>
