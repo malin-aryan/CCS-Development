@@ -15,9 +15,9 @@ get_header();
           <div class="row">
             <div class="col-md-12">
                 <div class="w-100 heading">
-                      <h6>Newsletter <span>Archive</span></h6>
-                      <p>Our monthly newsletter is published and distributed to CCS Mechanical employees. It is a great source for local building mechanical industry news and events. 
-                        You can find the latest and past newsletter issues listed above in Adobe Acrobat PDF format. You should download the latest version of Adobe Acrobat Reader if you do not currently have it installed on your computer.</p>
+                      <h6><?php the_field('newsletter_archive'); ?></h6>
+                      <?php the_field('info'); ?>
+                      
                 </div>
             </div><!--cols-->
           </div><!--/.row-->
@@ -25,66 +25,29 @@ get_header();
             <div class="row">
               <div class="col-md-12">
                 <ul>
-                  <li>
-                    <a href=""></a>
-                    <p> The CCS Fabricator
-                      CCS Mechanical Newsletter 
-                         December 2014</p>
-                  </li>
-                  <li>
-                    <a href=""></a>
-                    <p> The CCS Fabricator
-                      CCS Mechanical Newsletter 
-                         December 2014</p>
-                  </li>
-                  <li>
-                    <a href=""></a>
-                    <p> The CCS Fabricator
-                      CCS Mechanical Newsletter 
-                         December 2014</p>
-                  </li>
-                  <li>
-                    <a href=""></a>
-                    <p> The CCS Fabricator
-                      CCS Mechanical Newsletter 
-                         December 2014</p>
-                  </li>
-                  <li>
-                    <a href=""></a>
-                    <p> The CCS Fabricator
-                      CCS Mechanical Newsletter 
-                         December 2014</p>
-                  </li>
-                  <li>
-                    <a href=""></a>
-                    <p> The CCS Fabricator
-                      CCS Mechanical Newsletter 
-                         December 2014</p>
-                  </li>
-                  <li>
-                    <a href=""></a>
-                    <p> The CCS Fabricator
-                      CCS Mechanical Newsletter 
-                         December 2014</p>
-                  </li>
-                  <li>
-                    <a href=""></a>
-                    <p> The CCS Fabricator
-                      CCS Mechanical Newsletter 
-                         December 2014</p>
-                  </li>
-                  <li>
-                    <a href=""></a>
-                    <p> The CCS Fabricator
-                      CCS Mechanical Newsletter 
-                         December 2014</p>
-                  </li>
-                  <li>
-                    <a href=""></a>
-                    <p> The CCS Fabricator
-                      CCS Mechanical Newsletter 
-                         December 2014</p>
-                  </li>
+                  <?php 
+                    $args = array( 'post_type' => 'newsletter', 'posts_per_page' => 10 ,'order'=>'ASC');
+                    $the_query = new WP_Query( $args ); 
+                    ?>
+                    <?php if ( $the_query->have_posts() ) : ?>
+                    <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                   
+                     
+                      <li>
+                        <a href="<?php echo the_field('image');?>" target="_blank"></a>
+                        <p> <?php the_content(); ?> </p>
+                      </li>
+                   
+                          
+                          
+                    <?php endwhile;
+                    wp_reset_postdata(); ?>
+                    <?php else:  ?>
+                    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                    <?php endif; ?>
+
+
+                 
                 </ul>
               </div> <!--/.cols-->
             </div><!--/.row-->

@@ -118,3 +118,25 @@ function crunchify_create_deals_custom_taxonomy() {
 }
 
 
+/* ============ Newsletter ============ */
+
+add_action( 'init', 'create_newsletter_post_type' );
+
+function create_newsletter_post_type() {
+
+   $labels = array(
+    'name' => __( 'Newsletter' ),
+    'singular_name' => __( 'Newsletter' )
+    );
+
+    $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'supports'  => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+    'has_archive' => true,
+    // 'menu_icon' => 'dashicons-format-status',
+    'rewrite' => array('slug' => 'newsletter'),
+    );
+
+  register_post_type( 'newsletter', $args);
+}
