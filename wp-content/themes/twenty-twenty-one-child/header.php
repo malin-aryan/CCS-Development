@@ -15,7 +15,7 @@
 </head>
 
 <?php
-if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter','vendor','contact-us','employment-opportunities','terms-of-use','privacy-statement','commercial-projects','correctional-projects','educational-projects','healthcare-projects','industrial-projects','bonding-contract-methods','ccs-fabricator-newsletter','community-teamwork','mission-statement' ) ) ) {
+if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter','vendor','contact-us','employment-opportunities','terms-of-use','privacy-statement','commercial-projects','correctional-projects','educational-projects','healthcare-projects','industrial-projects','bonding-contract-methods','ccs-fabricator-newsletter','community-teamwork','mission-statement','blog','faq' ) ) ) {
 
   $InnerHeader = "InnerHeader";
   $innerClass = "InnerBanner";
@@ -138,7 +138,7 @@ if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter
 
               <h1> <span>CCS</span> Approach <b class="estb"></b></h1>
 
-            <?php }else if(is_page(array( 'projects','testimonials','newsletter','vendor','employment-opportunities','terms-of-use','privacy-statement','commercial-projects','correctional-projects','educational-projects','healthcare-projects','industrial-projects','bonding-contract-methods','ccs-fabricator-newsletter','community-teamwork','mission-statement' ))){ ?>  
+            <?php }else if(is_page(array( 'projects','testimonials','newsletter','vendor','employment-opportunities','terms-of-use','privacy-statement','commercial-projects','correctional-projects','educational-projects','healthcare-projects','industrial-projects','bonding-contract-methods','ccs-fabricator-newsletter','community-teamwork','mission-statement','blog','faq' ))){ ?>  
 
               <h1> <span>CCS</span> <?php the_title(); ?> <b class="estb"></b> </h1>
 
