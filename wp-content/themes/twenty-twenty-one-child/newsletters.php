@@ -34,7 +34,7 @@ get_header();
                    
                      
                       <li>
-                        <a href="<?php echo the_field('image');?>" target="_blank"></a>
+                        <a href="<?php if(the_field('image')){echo the_field('image');} else { echo "#";}?>" class="newsletter-link" target="_blank"></a>
                         <p> <?php the_content(); ?> </p>
                       </li>
                    
