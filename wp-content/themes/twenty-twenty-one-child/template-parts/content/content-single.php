@@ -11,34 +11,70 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+ <div class="w-100 pad75_0 InnerContentArea">
+      <div class="custom-container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="w-100 InnerTop mbot_50">
+              <h2 class="t-center x30 pbot_20"> <?php the_title(  ); ?></h2>
+              <p class="text-center x16"><?php echo strip_tags(get_the_content());?>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="w-100 InnerBot">
+              <div class="w-100 ProjectsDetails ViewProjectDetails">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="w-100 ProjectBox">
+                      <div class="PImage">
+                        <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+                      </div>
+                      <!--/.PImage-->
+                      <div class="w-100 PContent">
+                        <p class="heading">Commercial Projects</p>
 
-	<header class="entry-header alignwide">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		<?php twenty_twenty_one_post_thumbnail(); ?>
-	</header><!-- .entry-header -->
+                        <p><b>Value: </b> <?php the_field('value'); ?> </p>
 
-	<div class="entry-content">
-		<?php
-		the_content();
+                        <p><b>Location: </b> <?php the_field('value'); ?></p>
+                          
+                          <p><b> Owner: </b> <?php the_field('value'); ?></p>
+                          
+                          <p><b> Construction Manager: </b> <?php the_field('construction_manager'); ?></p>
+                          
+                          <p><b>CCS  Mechanical Scope of Work:</b> <?php the_field('ccs_mechanical_scope_of_work'); ?></p>
+                      </div>
+                      <!--/.PContent-->
+                    </div>
+                    <!--/.ProjectBox-->
+                  </div>
+                  <!--/.cols-->      
+                
+                </div>
+                <!--/.row-->
+              </div>
+              <!--/.Projects-Details-->
+            </div>
+            <!--/.InnerBot-->
+          </div>
+          <!--/.cols-->
+        </div>
+        <!--/.row-->
+      </div>
+      <!--/.container-->
+    </div>
 
-		wp_link_pages(
-			array(
-				'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'twentytwentyone' ) . '">',
-				'after'    => '</nav>',
-				/* translators: %: Page number. */
-				'pagelink' => esc_html__( 'Page %', 'twentytwentyone' ),
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
 
-	<footer class="entry-footer default-max-width">
-		<?php twenty_twenty_one_entry_meta_footer(); ?>
-	</footer><!-- .entry-footer -->
 
-	<?php if ( ! is_singular( 'attachment' ) ) : ?>
-		<?php get_template_part( 'template-parts/post/author-bio' ); ?>
-	<?php endif; ?>
 
-</article><!-- #post-<?php the_ID(); ?> -->
+
+
+	
+
+	
+
+
+
+

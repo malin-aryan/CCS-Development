@@ -53,7 +53,7 @@ get_header();
                           <!--/.PImage-->
                           <div class="w-100 PContent">
                             <p class="heading"><?php echo $term->name; ?></p>
-                            <p><?php echo $term->description; ?></p>
+                            <p><?php echo wp_trim_words($term->description, 19); ?></p>
                             <a href="<?php echo esc_url( get_term_link( $term ) ) ?>">Read More</a>
                           </div>
                           <!--/.PContent-->
