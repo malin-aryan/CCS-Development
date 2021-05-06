@@ -13,23 +13,13 @@
   </style>
   <?php wp_head(); ?>
 </head>
-<?php 
-  // finds the last URL segment  
-  $urlArray = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-  $segments = explode('/', $urlArray);
-  $numSegments = count($segments); 
-  $currentSegment = $segments[$numSegments - 1];
-?>
+
 <?php
 if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter','vendor','contact-us','employment-opportunities','terms-of-use','privacy-statement','commercial-projects','correctional-projects','educational-projects','healthcare-projects','industrial-projects','bonding-contract-methods','ccs-fabricator-newsletter','community-teamwork','mission-statement','blog','faq' ) ) ) {
 
   $InnerHeader = "InnerHeader";
   $innerClass = "InnerBanner";
 
-}else if($currentSegment=="commercial-projects" || $currentSegment=="correctional-projects" || $currentSegment=="educational-projects" || $currentSegment=="healthcare-projects" || $currentSegment=="industrial-projects"){  
-              
-  $InnerHeader = "InnerHeader";
-  $innerClass = "InnerBanner";
 } else { 
 
   $InnerHeader = "";
@@ -92,15 +82,7 @@ if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter
                   wp_nav_menu( array('menu_class' => 'navbar-nav', 'menu' => 'top left menu' ) );
                 ?>
               <ul class="navbar-nav HideMobile">
-                <!-- <li class="nav-item">
-                  <a class="nav-link" href="about-us.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="approach.html">Approach</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="projects.html">Projects</a>
-                </li> -->
+              
                 <li class="HideMobile logo">
                   <a href="<?php  site_url('/');?>">
                      <?php echo get_custom_logo(); ?>
@@ -108,14 +90,7 @@ if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter
                   </a>
                   <p>We dont indent to be the biggest... Just the best.</p>
                 </li>
-               <!--  <li class="nav-item">
-                  <a class="nav-link" href="testimonials.html">Testimonials</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="newsletters.html">Newsletters</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="vendor.html">Vendor</a> -->
+               
                 </li>
               </ul>
                 <?php  
@@ -138,42 +113,7 @@ if ( is_page( array( 'about-us','approach','projects','testimonials','newsletter
           <!--/.BannerImage-->
 
           <div class="w-100 BannerContent">
-
-
-
-            <?php
-            if ( is_page( array( 'about-us' ) ) ) {
-            ?>
-             
-             <h1>About <span>CCS</span> Mechanical <b class="estb"></b></h1>
-
-            <?php } else if ( is_page( array( 'approach' ) ) ){ ?>
-
-              <h1> <span>CCS</span> Approach <b class="estb"></b></h1>
-
-            <?php }else if(is_page(array( 'projects','testimonials','newsletter','vendor','employment-opportunities','terms-of-use','privacy-statement','commercial-projects','correctional-projects','educational-projects','healthcare-projects','industrial-projects','bonding-contract-methods','ccs-fabricator-newsletter','community-teamwork','mission-statement','blog','faq' ))){ ?>  
-
-              <h1> <span>CCS</span> <?php the_title(); ?> <b class="estb"></b> </h1>
-
-            <?php }else if(is_page(array( 'contact-us'))){ ?>  
-
-              <h1> <span>Contact</span> Us <b class="estb"></b></h1>
-
-            <?php }else if($currentSegment=="commercial-projects" || $currentSegment=="correctional-projects" || $currentSegment=="educational-projects" || $currentSegment=="healthcare-projects" || $currentSegment=="industrial-projects"){ ?>  
-              <?php $name = explode("-", $currentSegment) ;?>
-              <h1> <span><?php print_r($name[0]) ;?></span> <?php print_r($name[1]) ;?> <b class="estb"></b></h1>
-
-            <?php }else{ ?>  
-              
-              <h1><span>CCS</span> Mechanical <b class="estb"></b></h1>
-              <h2>Your Source for Quality Climate Control Systems</h2>
-
-              <p>Product knowledge and project diversity compliment our solid
-                <span> business practices and diligent work ethic.</span>
-              </p>
-              <a href="<?php echo get_site_url(); ?>/about-us" class="Button">View More...</a>
-
-            <?php } ?>
+            <h1> <span> Commercial </span> Projects <b class="estb"></b> </h1>
 
 
           </div>

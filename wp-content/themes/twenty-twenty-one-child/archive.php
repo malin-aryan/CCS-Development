@@ -56,7 +56,7 @@ $description = get_the_archive_description();
 
                 <div class="row">
                   <div class="col-md-12">
-                    <h4>Our commercial projects include:</h4>
+                    <h4>Our <?php single_term_title(  ); ?> include:</h4>
                   </div>
                   <!--/.cols-->
                 </div>
@@ -76,120 +76,26 @@ $description = get_the_archive_description();
                         </thead>
   
                         <tbody>
-                          <tr>
-                            <td>Sumter Landing</td>
-                            <td> $2,000,000</td>
-                            <td>Lady Lake FL</td>
-                            <td>Edwards Construction</td>
-                          </tr>
-                          <tr>
-                            <td>Center of Excellence</td>
-                            <td>$1,638,567</td>
-                            <td>Gainesville FL</td>
-                            <td>McClier Corp.</td>
-                          </tr>
-                          <tr>
-                             <td> Downtown V</td>
-                            <td>$1,550,000</td>
-                            <td>Lady Lake FL</td>
-                            <td>Edwards Construction</td>
-                          </tr>
-                          <tr>
-                            <td> Daytona International Visitor Center</td>
-                            <td>$1,100,000</td>
-                            <td>Daytona Bch FL</td>
-                            <td>Foley & Assoc.</td>
-                          </tr>
-                          <tr>
-                             <td> Lynn Business Center</td>
-                            <td>$1,000,000</td>
-                            <td>Deland FL</td>
-                            <td>Foley & Assoc.</td>
-                          </tr>
-                          <tr>
-                             <td>Circle Square Ranch</td>
-                            <td>$944,609</td>
-                            <td>Ocala FL</td>
-                            <td>Edwards Construction</td>
-                          </tr>
-                          <tr>
-                             <td> Holiday Inn</td>
-                            <td>$877,850</td>
-                            <td>Ocala FL</td>
-                            <td>FeasterCo</td>
-                          </tr>
-                          <tr>
-                              <td> Cane Garden Country Club</td>
-                            <td>$750,000</td>
-                            <td>Villages FL</td>
-                            <td>Edwards Construction</td>
-                          </tr>
-                          <tr>
-                            
-                            <td> Alachua Regional Service Center</td>
-                            <td>$600,000</td>
-                            <td>Gainesville FL</td>
-                            <td>Perry-Parrish</td>
-                          </tr>
-                          <tr>
-                             <td> Golden Ocala Fitness Center</td>
-                            <td>$500,162</td>
-                            <td>Ocala FL</td>
-                            <td>Mark Spaulding Const</td>
-                          </tr>
-                          <tr>
-                             <td>Golden Ocala Country Club</td>
-                            <td>$450,000</td>
-                            <td>Ocala FL</td>
-                            <td></td>td>
-                          </tr>
-                          <tr>
-                             <td>Living Waters Worship</td>
-                            <td>$450,000</td>
-                            <td>Ocala FL</td>
-                            <td>Fabian Commercial</td>
-                          </tr>
-                          <tr> <td>Homewood Suites</td>
-                            <td>$357,767</td>
-                            <td>Ocala FL</td>
-                            <td>FeasterCo</td>
-                          </tr>
-                          <tr>
-                              <td> Comfort Suites</td>
-                            <td>$309,018</td>
-                            <td>Ocala FL</td>
-                            <td>Edwards Construction</td>
-                          </tr>
-                          <tr>
-                             <td>Ocala Electric Utilities</td>
-                            <td>$292,000</td>
-                            <td>Ocala FL</td>
-                            <td>McLaughlin Co.</td>
-                          </tr>
-                          <tr>
-                             <td>Constans Theater</td>
-                            <td>$250,000</td>
-                            <td>Tampa FL</td>
-                            <td>AD Morgan</td>
-                          </tr>
-                          <tr>
-                             <td>Gainesville Community Playhouse</td>
-                            <td>$206,408td</td>
-                            <td>Gainesville FL</td>
-                            <td>Nixon Construction</td>
-                          </tr>
-                          <tr>
-                             <td> All Pro Imports</td>
-                            <td>$150,000</td>
-                            <td>Ocala FL</td>
-                            <td>Fabian Const</td>
-                          </tr>
-                          <tr>
-                             <td> Boyd Corporate Center</td>
-                            <td>$120,546</td>
-                            <td>Ocala FL</td>
-                            <td>Moss Construction</td>
-                          </tr>
+                        <?php 
+			            $args = array( 'post_type' => 'projects_include', 'posts_per_page' => 20 ,'order'=>'ASC');
+			            $the_query = new WP_Query( $args ); 
+			            ?>
+			            <?php if ( $the_query->have_posts() ) : ?>
+			            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+						<tr>
+							<td><?php the_title(); ?></td>
+							<td><?php echo the_field('value');?></td>
+							<td><?php echo the_field('location');?></td>
+							<td><?php echo the_field('construction_manager');?></td>
+						</tr>
+			           
+			            <?php endwhile;
+			            wp_reset_postdata(); ?>
+			            <?php else:  ?>
+			            <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+			            <?php endif; ?>	
+
+                         
                          
                         </tbody>
   

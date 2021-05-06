@@ -140,3 +140,27 @@ function create_newsletter_post_type() {
 
   register_post_type( 'newsletter', $args);
 }
+
+/* ========================== Projects include ============================== */
+
+add_action( 'init', 'create_projects_include_post_type' );
+
+function create_projects_include_post_type() {
+
+   $labels = array(
+    'name' => __( 'Projects include' ),
+    'singular_name' => __( 'Projects include' )
+    );
+
+    $args = array(
+    'labels' => $labels,
+    'public' => true,
+    'supports'  => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+    'has_archive' => true,
+    // 'menu_icon' => 'dashicons-format-status',
+    'rewrite' => array('slug' => 'projects_include'),
+    );
+
+  register_post_type( 'projects_include', $args);
+}
+
