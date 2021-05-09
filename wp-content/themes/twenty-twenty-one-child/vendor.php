@@ -22,6 +22,8 @@ get_header();
                 <div class="row">
                   <div class="col-xl-4 col-lg-12 col-md-12">
                     <div class="w-100 FWLeft">
+
+                      
                       <ul class="nav nav-tabs">
                         <li class="nav-item">
                           <a class="nav-link active" data-toggle="tab" href="#login">
@@ -50,23 +52,23 @@ get_header();
                         <div id="login" class=" tab-pane active">
                           <h3>Login</h3>
                           <p>Enter login details</p>
-
-                          <form action="" class="w-100">
+                          <?php echo do_shortcode(' [ultimatemember form_id="278"]');?>
+                          <!-- <form action="" class="w-100">
                             <div class="form-group">
                               <label for="">Username</label>
                               <input type="text" class="form-control input">
                             </div>
-                            <!--/.form-group-->
+                           
                             <div class="form-group">
                               <label for="">Password</label>
                               <input type="text" class="form-control input">
                             </div>
-                            <!--/.form-group-->
+                            
                             <div class="form-group">
                               <a href="vendors-dashboard.html" class="Button">LOGIN</a>
                             </div>
-                            <!--/.form-group-->
-                          </form>
+                           
+                          </form> -->
 
 
                         </div>
@@ -78,74 +80,7 @@ get_header();
                         
                             </p>
 
-                          <form action="" class="w-100">
-
-                            <div class="row">
-                              <div class="col-md-12">
-                                <div class="form-group">
-                                  <label for="">Username</label>
-                                  <input type="text" class="form-control input">
-                                </div>
-                                <!--/.form-group-->
-
-                              </div><!--/.cols-->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="">First Name</label>
-                                  <input type="text" class="form-control input">
-                                </div>
-
-                              </div><!--/.cols-->
-                              <div class="col-md-6">
-                                  
-                            <div class="form-group">
-                              <label for="">Last Name</label>
-                              <input type="text" class="form-control input">
-                            </div>
-
-                              </div><!--/.cols-->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="">Display Name</label>
-                                  <input type="text" class="form-control input">
-                                </div>
-                              </div><!--/.cols-->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="">Email Address</label>
-                                  <input type="text" class="form-control input">
-                                </div>
-
-                              </div><!--/.cols-->
-                          
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="">Password:</label>
-                                  <input type="text" class="form-control input">
-                                </div>
-
-                              </div><!--/.cols-->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <label for="">Confirm Password:</label>
-                                  <input type="text" class="form-control input">
-                                </div>
-
-                              </div><!--/.cols-->
-                              <div class="col-md-6">
-                                <div class="form-group">
-                                  <a href="vendors-dashboard.html" class="Button">LOGIN</a>
-                                </div>
-                              </div><!--/.cols-->
-                            </div> <!--/.row-->
-                           
-                           
-                            <!--/.form-group-->
-                            <div class="form-group">
-                              
-                            </div>
-                            <!--/.form-group-->
-                          </form>
+                          <?php echo do_shortcode('[ultimatemember form_id="277"]'); ?>
                         </div>
                         <div id="forgetpassword" class=" tab-pane fade">
                           <h3>Forword Password</h3>
