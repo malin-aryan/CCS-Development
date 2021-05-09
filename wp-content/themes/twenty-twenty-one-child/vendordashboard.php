@@ -24,7 +24,7 @@ get_header();
                                                 <div class="w-100 dbl-list">
                                                         <ul>
                                                             <li><a href="<?php echo get_site_url(); ?>/bid-calendar" class="hover">Bid Calender</a></li>
-                                                            <li><a href="<?php echo get_site_url(); ?>/planroom" class="hover">Plan Room</a></li>
+                                                            <li><a href="<?php echo get_site_url(); ?>/plan-room" class="hover">Plan Room</a></li>
                                                             <li><a href="<?php echo get_site_url(); ?>/employee" class="hover">Employee</a></li>
                                                         </ul>
                                                 </div> <!--/.dbl-list-->

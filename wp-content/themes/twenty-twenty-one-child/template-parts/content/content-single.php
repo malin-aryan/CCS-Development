@@ -10,7 +10,6 @@
  */
 
 ?>
-
  <div class="w-100 pad75_0 InnerContentArea">
       <div class="custom-container">
         <div class="row">
@@ -23,6 +22,8 @@
           </div>
         </div>
         <div class="row">
+        <?php if(get_post_type() == 'projects'){?>
+
           <div class="col-md-12">
             <div class="w-100 InnerBot">
               <div class="w-100 ProjectsDetails ViewProjectDetails">
@@ -60,6 +61,51 @@
             <!--/.InnerBot-->
           </div>
           <!--/.cols-->
+
+        <?php }else{ ?>
+
+           <div class="col-md-12">
+            <div class="w-100 InnerBot">
+              <div class="w-100 ProjectsDetails ViewProjectDetails">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="w-100 ProjectBox">
+                      <div class="PImage">
+                        <div class="entry-content">
+                        <?php
+                        the_content();
+
+                        wp_link_pages(
+                          array(
+                            'before'   => '<nav class="page-links" aria-label="' . esc_attr__( 'Page', 'twentytwentyone' ) . '">',
+                            'after'    => '</nav>',
+                            /* translators: %: Page number. */
+                            'pagelink' => esc_html__( 'Page %', 'twentytwentyone' ),
+                          )
+                        );
+                        ?>
+                      </div><!-- .entry-content -->
+                      </div>
+                      <!--/.PImage-->
+                      <div class="w-100 PContent">
+                        
+
+                      </div>
+                      <!--/.PContent-->
+                    </div>
+                    <!--/.ProjectBox-->
+                  </div>
+                  <!--/.cols-->      
+                
+                </div>
+                <!--/.row-->
+              </div>
+              <!--/.Projects-Details-->
+            </div>
+            <!--/.InnerBot-->
+          </div>
+          <!--/.cols-->
+        <?php } ?>
         </div>
         <!--/.row-->
       </div>

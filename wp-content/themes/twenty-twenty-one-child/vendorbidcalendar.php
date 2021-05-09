@@ -22,7 +22,7 @@ get_header();
                                                         <h2 class="x20 color-b">CCS Mechnical Inc.</h2>
                                                 </div> <!--/.dbl-head-->
                                                 <div class="w-100 dbl-list">
-                                                        <?php echo do_shortcode('[MEC id="296"]');?>
+                                                        <?php echo do_shortcode('[ai1ec]');?>
                                                 </div> <!--/.dbl-list-->
                                         </div> <!--/.dbleft-->
  
