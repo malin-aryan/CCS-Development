@@ -84,19 +84,21 @@ get_header();
                         </div>
                         <div id="forgetpassword" class=" tab-pane fade">
                           <h3>Forword Password</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod magna aliqua.</p>
+                          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod magna aliqua.</p> -->
 
-                          <form action="" class="w-100">
+                          <!-- <form action="" class="w-100">
                             <div class="form-group">
                               <label for="">Username</label>
                               <input type="text" class="form-control input">
                             </div>
-                            <!--/.form-group-->                            
+                                                    
                             <div class="form-group">
                               <a href="vendors-dashboard.html" class="Button">Reset </a>
                             </div>
-                            <!--/.form-group-->
-                          </form>
+                           
+                          </form> -->
+                          <?php echo do_shortcode('[ultimatemember_password]'); ?>
+                         
                         </div>
                       </div>
                       <!--/.tab-content-->
